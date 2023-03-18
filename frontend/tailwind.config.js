@@ -3,11 +3,17 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
+
+      //user colors
       'light-blue': '#3991AC',
-      'middle-blue': '#395CAC',
+      'blue': '#395CAC',
       'dark-blue' : '#3D39AC',
       'dark-purple': '#6039AC',
       'purple': '#7E39AC',
+
+      //admin colors
+      
+
 
     },
     fontFamily: {
