@@ -21,7 +21,7 @@ const DashboardHeader = () => {
             <img src={logo} alt="ikona logo" className="h-8 w-8 mr-2" />
             <span className="text-2xl font-bold">SPS</span>
           </div>
-          <span className={`border-dark-purple border-solid border-2 px-6 py-3 rounded-3xl text-sm font-medium cursor-pointer transition-all duration-300 ${showWindow ? 'bg-dark-purple text-white' : ''}`}
+          <span className={`border-red border-solid border-2 px-6 py-3 rounded-3xl text-sm font-medium cursor-pointer transition-all duration-300 ${showWindow ? 'bg-red text-white' : ''}`}
             onClick = {handleWindowToggle}
           >
             username

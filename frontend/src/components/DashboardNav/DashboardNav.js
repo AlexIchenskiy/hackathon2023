@@ -6,6 +6,7 @@ import './DashboardNav.scss';
 function DashboardNav({ onItemSelected }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     
+    
     const listItems = [
         'THREAT INTELLIGENCE',
         'REAL-TIME MONITORING',
@@ -27,7 +28,7 @@ function DashboardNav({ onItemSelected }) {
                 <li 
                     key={index} 
                     onClick={() => handleItemClick(index)} 
-                    className={`px-6 py-3 text-2xl cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-dark-purple text-white' : ''}`}
+                    className={`px-6 py-3 text-2xl cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-red text-white' : ''}`}
                 >
                     {item}
                 </li>
