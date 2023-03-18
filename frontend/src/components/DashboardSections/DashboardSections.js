@@ -2,7 +2,7 @@ import React from 'react';
 
 import Sections from './components/Sections/Sections.js';
 
-import logo from '../../assets/images/ikona_spider.png';
+import logo from '../../assets/images/spiderweb.png';
 
 import './DashboardSections.scss';
 
