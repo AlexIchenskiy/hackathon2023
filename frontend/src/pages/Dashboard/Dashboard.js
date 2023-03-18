@@ -18,7 +18,9 @@ const Dashboard = () => {
 
     return (
         <>
+            <DashboardHeader />
             <DashboardNav onItemSelected={handleItemSelected} />
+            {selectedIndex}
         </>
     )
 }
