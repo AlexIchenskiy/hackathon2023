@@ -7,12 +7,12 @@ function DashboardNav({ onItemSelected }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     
     const listItems = [
-        'Threat Intelligence',
-        'Real-time Monitoring',
-        'Alerts',
-        'Reporting and Analysis',
-        'System parameters',
-        'Help',
+        'THREAT INTELLIGENCE',
+        'REAL-TIME MONITORING',
+        'ALERTS',
+        'REPORTING AND ANALYSIS',
+        'SYSTEM PARAMETERS',
+        'HELP',
     ];
 
     const handleItemClick = (index) => {
@@ -27,7 +27,7 @@ function DashboardNav({ onItemSelected }) {
                 <li 
                     key={index} 
                     onClick={() => handleItemClick(index)} 
-                    className={`cursor-pointer transition-all duration-300 ${selectedIndex === index ? '' : ''}`}
+                    className={`px-6 py-3 text-2xl cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-dark-purple text-white' : ''}`}
                 >
                     {item}
                 </li>
