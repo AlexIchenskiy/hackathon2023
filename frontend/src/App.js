@@ -3,16 +3,12 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from "./pages/LogIn/Login";
 import Signup from "./pages/SignUp/Signup";
+import Dashboard from "./pages/Dashboard/Dashboard"
 
 function App() {
-  
- return(
-  <Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/login" element={<Login />} />
-  <Route path="/signup" element={<Signup />} />
-</Routes>
- )
+  return(
+    <Dashboard />
+  )
 }
 
 export default App;
