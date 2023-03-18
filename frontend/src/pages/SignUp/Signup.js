@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+
 
 const Signup = () => {
       const particlesInit = useCallback(async engine => {
@@ -12,6 +13,22 @@ const Signup = () => {
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
+
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+    const handleSubmit = (e) => {
+    e.preventDefault();
+
+  // Check if passwords match
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+    } else {
+    // Submit form
+    }
+  };
+
+
 
     return (
     <>
@@ -98,19 +115,21 @@ const Signup = () => {
         <div className='rounded-xl p-6 z-20' style={{backgroundColor: 'white'}}>
           <h1 className="p-3 text-3xl font-bold opacity-95 tracking-wide z-100"
           style={{fontFamily: 'Courier New'}}>Sign Up</h1>
-          <form className='ml-3 p-2 font-bold' style={{fontFamily: 'Courier New', width: '350px', height: '400px'}}>
+          <form onSubmit={handleSubmit} className='ml-3 p-2 font-bold' style={{fontFamily: 'Courier New', width: '350px', height: '400px'}}>
             <label className='m-5 p-4' htmlFor='username'>Username:</label>
-            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3'}}  
+            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3', color: 'black'}}  
               type='username' id='username' name='username' required />
             <br />
             <label className='m-5 p-4' htmlFor='email'>Email:</label>
-            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3'}} type='email' id='email' name='email' required />
+            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3', color: 'black'}} type='email' id='email' name='email' required />
             <br />
             <label className='m-5 p-4' htmlFor='password'>Password:</label>
-            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3'}} type='password' id='password' name='password' required />
+            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3', color: 'black'}} 
+            type='password' id='password' name='password' required value={password} onChange={(e) => setPassword(e.target.value)}/>
             <br />
             <label className='m-5 p-4' htmlFor='password'>Confirm Password:</label>
-            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3'}} type='password' id='password' name='password' required />
+            <input className='p-2 m-2 rounded-lg opacity-20' style={{backgroundColor: '#D3D3D3', color: 'black'}}
+            type='password' id='chpassword' name='password' required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}/>
             <br />
             <button className='p-3 m-5 rounded-lg w-32 text-xl' style={{backgroundColor: '#ff0000'}} type='submit'>Sign Up</button>
           </form>
