@@ -36,6 +36,9 @@ const Dashboard = () => {
                 <div className='inline-block'>
                     {selectedItem}
                 </div>
+            <DashboardNav onItemSelected={handleItemSelected} />
+            <div className='inline-block'>
+                {selectedItem}
             </div>
             <DashboardFooter />
         </div>
