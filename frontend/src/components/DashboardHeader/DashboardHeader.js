@@ -17,10 +17,10 @@ const DashboardHeader = () => {
 
     return (
       
-        <header className="bg-blue-900 text-white flex items-center justify-between px-4 py-3 ">
+        <header className="bg-blue-900 flex items-center justify-between px-4 py-3 ">
   <div className="flex items-center">
-    <img src= {logo} alt="your-icon-description" className="h-8 w-8 mr-2" />
-    <span className="text-xl font-bold">SPS</span>
+    <img src={logo} alt="ikona logo" className="h-8 w-8 mr-2" />
+    <span className="text-2xl font-bold">SPS</span>
   </div>
   <span className="text-sm font-medium cursor-pointer"
    onClick = {handleWindowToggle}

@@ -12,6 +12,7 @@ function DashboardNav({ onItemSelected }) {
         'Alerts',
         'Reporting and Analysis',
         'System parameters',
+        'Help',
     ];
 
     const handleItemClick = (index) => {
