@@ -52,13 +52,13 @@ const Home = () => {
                 },
                 particles: {
                     color: {
-                        value: "#9ac5e3",
+                        value: "#ff0000",
                     },
                     links: {
-                        color: "#9ac5e3",
+                        color: "#ff0000",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 0.8,
                         width: 1,
                     },
                     collisions: {
@@ -101,13 +101,13 @@ const Home = () => {
     height: '100vh'
   }} >
         <h1 className="p-10 text-7xl font-bold mb-8 opacity-95 tracking-wide"
-        style={{color:'#9ac5e3', fontFamily: 'Courier New'}}>Spider Cyber Security</h1>
+        style={{color:'#ff0000', fontFamily: 'Courier New'}}>Spider Cyber Security</h1>
         <div className="p-40" style={{display: 'block'}}>
           <Link to='/login'>
             <button className="self-center w-44 opacity-95 font-bold mr-4 px-6 py-3 text-xl rounded-lg bg-gray-800 hover:bg-gray-700 focus:outline-none focus:shadow-outline"
             style = {{
               display: 'block',
-              backgroundColor:'#9ac5e3',
+              backgroundColor:'#ff0000',
               fontFamily: 'Courier New',
               padding: '10px',
               margin: '10px',
@@ -116,7 +116,7 @@ const Home = () => {
           <Link to='/signup'>
             <button className="self-center w-44 opacity-95 font-bold mr-4 px-6 py-3 text-xl rounded-lg bg-gray-800 hover:bg-gray-700 focus:outline-none focus:shadow-outline"
             style = {{
-              backgroundColor:'#9ac5e3',
+              backgroundColor:'#ff0000',
               fontFamily: 'Courier New',
               padding: '10px', 
               margin: '10px',
