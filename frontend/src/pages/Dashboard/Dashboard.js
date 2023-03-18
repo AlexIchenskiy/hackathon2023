@@ -30,11 +30,11 @@ const Dashboard = () => {
     return (
         <div className='w-full h-full'>
             <DashboardHeader />
-            
-            <DashboardNav onItemSelected={handleItemSelected} /><DashboardFooter />
+            <DashboardNav onItemSelected={handleItemSelected} />
             <div className='inline-block'>
                 {selectedItem}
             </div>
+            <DashboardFooter />
         </div>
     )
 }
