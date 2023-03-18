@@ -18,3 +18,12 @@ services:
     container_name: hackathon-frontend
     ports:
       - 3000:3000
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: hackathon2023-db
+    ports:
+      - "3306:3306"
