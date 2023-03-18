@@ -20,16 +20,10 @@ services:
       - 3000:3000
 
   db:
-    image: postgres:14.1-alpine
+    image: mysql:8.0
     restart: always
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: hackathon2023-db
     ports:
-      - '5434:5434'
-    volumes: 
-      - db:/var/lib/postgresql/data
-
-volumes:
-  db:
-    driver: local
+      - "3306:3306"
