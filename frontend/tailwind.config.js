@@ -5,11 +5,15 @@ module.exports = {
     colors: {
 
       //user colors
-      'light-blue': '#3991AC',
+      'gray': '#DDDEF8',
+      'light-pink': '#E19DD4',
+      'cyan': '#3991AC',
+      'light-blue': '#6F8ECC',
       'blue': '#395CAC',
       'dark-blue' : '#3D39AC',
-      'dark-purple': '#6039AC',
+      'light-purple': '#A280FC',
       'purple': '#7E39AC',
+      'dark-purple': '#6039AC',
 
       //admin colors
       
