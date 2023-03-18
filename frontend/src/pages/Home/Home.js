@@ -1,30 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import backgroundImage from '../../assets/images/Human-factor_cybersecurity.webp';
+import { Link } from 'react-router-dom';
+import backgroundImage from '../../assets/images/pozadina.jpg';
 
 const Home = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}
-    >
-      <div className='homeTitle' style={{ textAlign: 'center' }}>
-        <h1>Spider Cyber Security</h1>
+    <div className="h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="text-center">
+        <h1 className="text-5xl font-bold mb-8">Spider Cyber Security</h1>
         <div>
-          
           <Link to='/login'>
-            <button>Log In</button>
+            <button className="mr-4 px-6 py-3 rounded-lg text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:shadow-outline">Log In</button>
           </Link>
           <Link to='/signup'>
-            <button>Sign Up</button>
+            <button className="px-6 py-3 rounded-lg text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline">Sign Up</button>
           </Link>
         </div>
       </div>
