@@ -1,6 +1,6 @@
-import React from 'react';
-import DashboardSections from '../../components/DashboardSections/DashboardSections';
+import React, { useState } from 'react';
 import DashboardHeader from '../../components/DashboardHeader/DashboardHeader';
+import DashboardNav from '../../components/DashboardNav/DashboardNav';
 import ThreatIntelligence from '../../components/ThreatIntelligence/ThreatIntelligence';
 import RealTimeMonitoring from '../../components/RealTimeMonitoring/RealTimeMonitoring';
 import Alerts from '../../components/Alerts/Alerts';
@@ -9,16 +9,31 @@ import SystemParameters from '../../components/SystemParameters/SystemParameters
 import Help from '../../components/Help/Help';
 
 const Dashboard = () => {
-    let selection = <ThreatIntelligence />
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedItem, setSelectedItem] = useState(<ThreatIntelligence />);
+
+    const listItems = [
+        <ThreatIntelligence />,
+        <RealTimeMonitoring />,
+        <Alerts />,
+        <ReportingAndAnalysis />,
+        <SystemParameters />,
+        <Help />,
+    ];
+
+    const handleItemSelected = (index) => {
+        setSelectedIndex(index);
+        setSelectedItem(listItems[index]);
+    }
 
     return (
-        <>
-            <DashboardSections />
-            <div style={{display: 'inline-block'}}>
-                <DashboardHeader />
-                {selection}
+        <div className='w-full h-full'>
+            <DashboardHeader />
+            <DashboardNav onItemSelected={handleItemSelected} />
+            <div className='inline-block'>
+                {selectedItem}
             </div>
-        </>
+        </div>
     )
 }
 
