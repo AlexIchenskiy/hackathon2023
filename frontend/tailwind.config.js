@@ -3,11 +3,29 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      'light-blue': '#3991AC',
-      'middle-blue': '#395CAC',
-      'dark-blue' : '#3D39AC',
-      'dark-purple': '#6039AC',
-      'purple': '#7E39AC',
+
+      //user colors
+      'white' : '#fff',
+      'light-gray' : '#bfbfbf',
+      'gray' : '#7f7f7f',
+      'dark-gray' : '#3f3f3f',
+      'black' : '#000',
+      'light-red' : '#ff0000',
+      'red': '#bf0000',
+      'dark-red': '#7f0000',
+
+      'pink' : '#f9abe7',
+      'light-purple' : '#e1a9f6',
+      'dark-purple' : '#9e3ffd',
+      'violet' : '#d1bbf9',
+      'blue' : '#c6c7ff',
+      'cyan' : '#b5e5ff',
+
+
+      //admin colors
+      
+      
+
 
     },
     fontFamily: {
