@@ -1,5 +1,6 @@
 import React from 'react';
-import DashboardSections from '../../components/DashboardSections/DashboardSections';
+import { useState } from 'react';
+import DashboardNav from '../../components/DashboardNav/DashboardNav';
 import DashboardHeader from '../../components/DashboardHeader/DashboardHeader';
 import ThreatIntelligence from '../../components/ThreatIntelligence/ThreatIntelligence';
 import RealTimeMonitoring from '../../components/RealTimeMonitoring/RealTimeMonitoring';
@@ -9,15 +10,15 @@ import SystemParameters from '../../components/SystemParameters/SystemParameters
 import Help from '../../components/Help/Help';
 
 const Dashboard = () => {
-    let selection = <ThreatIntelligence />
+    const [selectedIndex, setSelectedIndex] = useState(0);
+
+    const handleItemSelected = (index) => {
+        setSelectedIndex(index);
+    }
 
     return (
         <>
-            <DashboardSections />
-            <div style={{display: 'inline-block'}}>
-                <DashboardHeader />
-                {selection}
-            </div>
+            <DashboardNav onItemSelected={handleItemSelected} />
         </>
     )
 }
