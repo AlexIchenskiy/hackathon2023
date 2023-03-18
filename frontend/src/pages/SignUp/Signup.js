@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../assets/images/Human-factor_cybersecurity.webp';
+import backgroundImage from '../../assets/images/pozadina.jpg';
 
 const Signup = () => {
     return (
