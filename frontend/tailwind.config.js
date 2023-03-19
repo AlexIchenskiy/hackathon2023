@@ -13,6 +13,9 @@ module.exports = {
       'light-red' : '#ff0000',
       'red': '#bf0000',
       'dark-red': '#7f0000',
+    'warning-high': '#ff9966',
+    'warning-medium': '	#ffcc00',
+    'warning-low': '#99cc33',
 
       'pink' : '#f9abe7',
       'light-purple' : '#e1a9f6',

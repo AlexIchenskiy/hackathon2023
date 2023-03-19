@@ -6,7 +6,6 @@ import DashboardNav from '../../components/DashboardNav/DashboardNav';
 import Help from '../../components/Help/Help';
 import RealTimeMonitoring from '../../components/RealTimeMonitoring/RealTimeMonitoring';
 import ReportingAndAnalysis from '../../components/ReportingAndAnalysis/ReportingAndAnalysis';
-import SystemParameters from '../../components/SystemParameters/SystemParameters';
 import ThreatIntelligence from '../../components/ThreatIntelligence/ThreatIntelligence';
 
 const Dashboard = () => {
@@ -18,7 +17,6 @@ const Dashboard = () => {
         <RealTimeMonitoring />,
         <Alerts />,
         <ReportingAndAnalysis />,
-        <SystemParameters />,
         <Help />,
     ];
 
