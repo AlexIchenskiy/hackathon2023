@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const FilterBySeverity = ({ onItemSelected }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const ListSeverity = ["All", "High", "Medium", "Low"];
+  const ListSeverity = ["All", "Critical", "High", "Medium", "Low"];
   
   const handleItemClick = (index) => {
     setSelectedIndex(index);

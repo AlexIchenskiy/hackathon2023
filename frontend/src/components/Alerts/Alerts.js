@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import FilterBySeverity from "./components/FilterBySeverity/FilterBySeverity";
 
 import data from '../../assets/data/alerts.json';
 
@@ -10,9 +11,19 @@ const colors = {
 }
 
 const Alerts = () => {
+    const [severityFilter, setSeverityFilter] = useState('All');
+  const ListSeverity = ["All", "Critical", "High", "Medium", "Low"];
+
+    const handleItemSelected = (index) => {
+        setSeverityFilter(ListSeverity[index]);
+    } 
+
+    const filteredItems = data.filter((item) => item.severity === severityFilter || severityFilter === 'All');
+
     return (
         <>
-        {data.map((item) => (
+        <FilterBySeverity onItemSelected={handleItemSelected}/>
+        {filteredItems.map((item) => (
             <div key={item.id} className='rounded-xl shadow-2xl inline-block p-8 m-4 max-w-md'>
                 <h1 className='font-bold w-full text-start text-lg'
                     style={{color: colors[item.severity]}}>{item.name.toUpperCase()}</h1>
