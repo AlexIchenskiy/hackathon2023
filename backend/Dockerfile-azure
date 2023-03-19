@@ -1,0 +1,26 @@
+# Use the official OpenJDK 17 image as the parent image
+FROM openjdk:17-alpine AS build
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the source code to the working directory
+COPY . .
+
+# Build the application
+RUN ./gradlew build
+
+# Use a multi-stage build to optimize the image size
+FROM openjdk:17-alpine AS runtime
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the built application to the working directory
+COPY --from=build /app/build/libs/*.jar app.jar
+
+# Expose the appropriate port
+EXPOSE 8080
+
+# Start the application
+CMD ["java", "-jar", "app.jar"]
