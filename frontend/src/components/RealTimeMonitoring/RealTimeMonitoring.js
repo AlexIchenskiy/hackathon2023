@@ -18,7 +18,7 @@ const RealTimeMonitoring = () => {
             id: 'chart',
             data: [
                 {x: 0, y: parseInt(Math.random() * 25)},
-              ...chartData[0].data
+              ...chartData[0].data.slice(0, -1)
             ],
           },
         ];
