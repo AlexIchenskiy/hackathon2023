@@ -5,6 +5,8 @@ import com.burek.api.JWT.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -65,11 +67,23 @@ public class SecurityConfig {
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/user/login", "/user/register").permitAll()
+                .antMatchers("/threat/create", "/threat/delete/**").hasAuthority("ADMIN")
+                .antMatchers("/alert/create", "/alert/delete/**").hasAuthority("ADMIN")
+                .antMatchers("/report/**").hasAuthority("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .authenticationManager(authenticationManager)
                 .exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint)
                 // configure sessions and filters
+                .and()
+                .exceptionHandling()
+                .accessDeniedHandler((request, response, accessDeniedException) -> {
+                    response.setStatus(HttpStatus.FORBIDDEN.value());
+                    response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+                    String message = "You do not have permission to access this resource.";
+                    byte[] body = message.getBytes();
+                    response.getOutputStream().write(body);
+                })
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
