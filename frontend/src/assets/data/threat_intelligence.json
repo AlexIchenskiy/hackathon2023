@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "threat_type": "Ransomware",
+    "source_ip": "192.168.1.50",
+    "target_domain": "google.com",
+    "timestamp": "2022-03-02 12:30:00",
+    "severity": "High"
+  },
+  {
+    "id": 2,
+    "threat_type": "Phishing",
+    "source_ip": "10.1.1.5",
+    "target_domain": "amazon.com",
+    "timestamp": "2022-03-07 09:45:00",
+    "severity": "Medium"
+  },
+  {
+    "id": 3,
+    "threat_type": "SQL Injection",
+    "source_ip": "172.16.0.10",
+    "target_domain": "facebook.com",
+    "timestamp": "2022-02-28 14:20:00",
+    "severity": "High"
+  },
+  {
+    "id": 4,
+    "threat_type": "Brute Force",
+    "source_ip": "192.168.1.100",
+    "target_domain": "microsoft.com",
+    "timestamp": "2022-03-13 10:15:00",
+    "severity": "Medium"
+  },
+  {
+    "id": 5,
+    "threat_type": "Malware",
+    "source_ip": "10.0.0.15",
+    "target_domain": "apple.com",
+    "timestamp": "2022-02-24 16:40:00",
+    "severity": "High"
+  },
+  {
+    "id": 6,
+    "threat_type": "Botnet",
+    "source_ip": "172.16.0.30",
+    "target_domain": "netflix.com",
+    "timestamp": "2022-02-15 11:30:00",
+    "severity": "High"
+  },
+  {
+    "id": 7,
+    "threat_type": "Man-in-the-middle Attack",
+    "source_ip": "10.1.1.20",
+    "target_domain": "linkedin.com",
+    "timestamp": "2022-02-27 13:50:00",
+    "severity": "Medium"
+  },
+  {
+    "id": 8,
+    "threat_type": "DDoS",
+    "source_ip": "192.168.1.200",
+    "target_domain": "twitter.com",
+    "timestamp": "2022-03-09 18:20:00",
+    "severity": "High"
+  },
+  {
+    "id": 9,
+    "threat_type": "Credential Stuffing",
+    "source_ip": "10.1.1.10",
+    "target_domain": "yahoo.com",
+    "timestamp": "2022-03-10 15:10:00",
+    "severity": "Medium"
+  },
+  {
+    "id": 10,
+    "threat_type": "Credential Stuffing",
+    "source_ip": "172.16.0.20",
+    "target_domain": "github.com",
+    "timestamp": "2022-02-08 09:00:00",
+    "severity": "Low"
+  },
+  {
+  "id": 11,
+  "threat_type": "SQL Injection",
+  "source_ip": "192.168.1.30",
+  "target_domain": "wordpress.com",
+  "timestamp": "2022-02-22 17:12:00",
+  "severity": "High"
+  },
+  {
+  "id": 12,
+  "threat_type": "Ransomware",
+  "source_ip": "10.0.0.5",
+  "target_domain": "ebay.com",
+  "timestamp": "2022-03-04 14:55:00",
+  "severity": "High"
+  },
+  {
+  "id": 13,
+  "threat_type": "Botnet",
+  "source_ip": "172.16.0.40",
+  "target_domain": "spotify.com",
+  "timestamp": "2022-03-11 08:45:00",
+  "severity": "Medium"
+  },
+  {
+  "id": 14,
+  "threat_type": "Phishing",
+  "source_ip": "10.1.1.30",
+  "target_domain": "dropbox.com",
+  "timestamp": "2022-02-20 11:20:00",
+  "severity": "Low"
+  },
+  {
+  "id": 15,
+  "threat_type": "Malware",
+  "source_ip": "192.168.1.20",
+  "target_domain": "salesforce.com",
+  "timestamp": "2022-03-06 15:30:00",
+  "severity": "Medium"
+  },
+  {
+  "id": 16,
+  "threat_type": "Brute Force",
+  "source_ip": "10.0.0.10",
+  "target_domain": "adobe.com",
+  "timestamp": "2022-02-18 12:50:00",
+  "severity": "Low"
+  },
+  {
+  "id": 17,
+  "threat_type": "Man-in-the-middle Attack",
+  "source_ip": "172.16.0.50",
+  "target_domain": "slack.com",
+  "timestamp": "2022-03-01 09:15:00",
+  "severity": "High"
+  },
+  {
+  "id": 18,
+  "threat_type": "SQL Injection",
+  "source_ip": "10.1.1.40",
+  "target_domain": "oracle.com",
+  "timestamp": "2022-03-15 16:25:00",
+  "severity": "Medium"
+  },
+  {
+  "id": 19,
+  "threat_type": "Phishing",
+  "source_ip": "192.168.1.40",
+  "target_domain": "wikipedia.org",
+  "timestamp": "2022-02-28 13:10:00",
+  "severity": "Low"
+  },
+  {
+  "id": 20,
+  "threat_type": "Malware",
+  "source_ip": "172.16.0.60",
+  "target_domain": "airbnb.com",
+  "timestamp": "2022-03-14 10:30:00",
+  "severity": "High"
+  }
+]
