@@ -17,7 +17,8 @@ const Login = () => {
     }, []);
 
     return (
-    <><Particles className="z-0"
+    <>
+    <Particles className="z-0"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -52,10 +53,10 @@ const Login = () => {
                 },
                 particles: {
                     color: {
-                        value: "#9ac5e3",
+                        value: "#ff0000",
                     },
                     links: {
-                        color: "#9ac5e3",
+                        color: "#ff0000",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -94,27 +95,24 @@ const Login = () => {
                 detectRetina: true,
             }}
         />
-      <div className='text-center'>
-      <div className='loginWindow opacity-40 z-10 w-2/4' 
-      style={{ textAlign: 'center',
-      backgroundColor:'black',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      
-       }}>
-          <h1>Log In</h1>
-          <form>
-            <label htmlFor='email'>Email:</label>
-            <input type='email' id='email' name='email' required />
+    <div className='w-full h-full' style={{textAlign: 'center'}}>
+      <div className='loginWindow opacity-95 z-10 w-full h-full flex justify-center items-center flex-col' >
+        <div className='rounded-xl p-6 z-20' style={{backgroundColor: 'white'}}>
+          <h1 className="p-3 text-3xl font-bold opacity-95 tracking-wide z-100"
+          style={{fontFamily: 'Courier New'}}>Log In</h1>
+
+          <form className='ml-3 p-2 font-bold' style={{fontFamily: 'Courier New', width: '300px', height: '240px'}}>
+            <label className='m-5 p-4' htmlFor='email'>Email:</label>
+            <input style={{backgroundColor: '#D3D3D3'}} className='p-2 m-2 rounded-lg opacity-20' type='email' id='email' name='email' required />
             <br />
-            <label htmlFor='password'>Password:</label>
-            <input type='password' id='password' name='password' required />
+            <label className='m-5 p-4' htmlFor='password'>Password:</label>
+            <input style={{backgroundColor: '#D3D3D3'}} className='p-2 m-2 rounded-lg opacity-20' type='password' id='password' name='password' required />
             <br />
-            <button type='submit'>Login</button>
+            <button className='p-3 m-5 rounded-lg w-32 text-xl' style={{backgroundColor: '#ff0000'}}type='submit'>Login</button>
           </form>
         </div>
       </div>
+    </div>
   </>
     );
   };

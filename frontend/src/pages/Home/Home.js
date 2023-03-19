@@ -100,7 +100,7 @@ const Home = () => {
     alignItems: 'center',
     height: '100vh'
   }} >
-        <h1 className="p-10 text-7xl font-bold mb-8 opacity-95 tracking-wide"
+        <h1 className="p-10 text-7xl font-bold opacity-95 tracking-wide"
         style={{color:'#ff0000', fontFamily: 'Courier New'}}>Spider Cyber Security</h1>
         <div className="p-40" style={{display: 'block'}}>
           <Link to='/login'>
