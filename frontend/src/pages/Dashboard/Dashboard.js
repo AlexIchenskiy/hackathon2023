@@ -33,7 +33,7 @@ const Dashboard = () => {
             <div className='w-full h-full flex flex-row justify-start items-start overflow-y-scroll mt-0 pb-10'
                 style={{height: '90%'}}>
                 <DashboardNav onItemSelected={handleItemSelected} />
-                <div className='inline-block'>
+                <div className='inline-block w-full h-full'>
                     {selectedItem}
                 </div>
             </div>
