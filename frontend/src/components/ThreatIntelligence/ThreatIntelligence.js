@@ -17,10 +17,12 @@ const ThreatIntelligence = () => {
     setSeverityFilter(ListSeverity[index]);
   };
 
+  const filteredItems = data.filter((item) => item.severity === severityFilter || severityFilter === 'All');
+
   return (
     <>
       <FilterBySeverity onItemSelected={handleItemSelected} />
-      {data.map((item) => (
+      {filteredItems.map((item) => (
         <div
           key={item.id}
           className="rounded-xl shadow-2xl inline-block p-8 m-4"
