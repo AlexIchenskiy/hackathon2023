@@ -30,7 +30,7 @@ const Dashboard = () => {
     return (
         <div className='w-full h-full'>
             <DashboardHeader />
-            <div className={'w-full h-full flex flex-row justify-start items-start mt-0 pb-10 ' + selectedIndex === 1 ? "overflow-y-hidden" : "overflow-y-scroll"}
+            <div className={'w-full h-full flex flex-row justify-start items-start mt-0 pb-10 ' + (selectedIndex === 1 ? "overflow-y-hidden" : "overflow-y-scroll")}
                 style={{height: '90%'}}>
                 <DashboardNav onItemSelected={handleItemSelected} />
                 <div className='inline-block w-full h-full'>
