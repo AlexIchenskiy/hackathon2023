@@ -37,7 +37,6 @@ const Dashboard = () => {
                     {selectedItem}
                     <div className='grid grid-cols-4 gap-0 h-screen'>
                     <div className='fixed left-0 w-1/4'>
-                        <DashboardNav onItemSelected={handleItemSelected} />
                     </div>
                 </div>
 
