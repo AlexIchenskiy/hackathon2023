@@ -12,7 +12,6 @@ function DashboardNav({ onItemSelected }) {
         'REAL-TIME MONITORING',
         'ALERTS',
         'REPORTING AND ANALYSIS',
-        'SYSTEM PARAMETERS',
         'HELP',
     ];
 

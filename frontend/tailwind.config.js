@@ -12,6 +12,7 @@ module.exports = {
       "light-red": "#ff0000",
       red: "#bf0000",
       "dark-red": "#7f0000",
+      "warning-critical": "#cc3300",
       "warning-high": "#ff9966",
       "warning-medium": "	#ffcc00",
       "warning-low": "#99cc33",
