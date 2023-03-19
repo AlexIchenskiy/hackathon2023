@@ -18,12 +18,12 @@ const RealTimeMonitoring = () => {
             id: 'chart',
             data: [
                 {x: 0, y: parseInt(Math.random() * 25)},
-              ...chartData[0].data.slice(0, -1)
+              ...chartData[0].data
             ],
           },
         ];
         setChartData(newData);
-      }, 5000);
+      }, 2500);
   
       return () => clearInterval(timer);
     }, [chartData]);
