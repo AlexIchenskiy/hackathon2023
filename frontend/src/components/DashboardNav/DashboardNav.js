@@ -23,7 +23,7 @@ function DashboardNav({ onItemSelected }) {
 
     return (
         <div className='DashboardNav inline-block h-full'>
-            <ul className='lista rounded-md '>
+            <ul className='lista rounded-md' style={{width: '300px'}}>
             {listItems.map((item, index) => (
                 <li 
                     key={index} 
