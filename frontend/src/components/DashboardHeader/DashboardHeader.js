@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-import FilterBySeverity from "../ThreatIntelligence/components/FilterBySeverity/FilterBySeverity";
-
 import "./DashboardHeader.scss";
 import logo from "../../assets/images/ikona_spider.png";
 

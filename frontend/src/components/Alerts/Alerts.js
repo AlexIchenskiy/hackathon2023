@@ -11,14 +11,14 @@ const colors = {
 }
 
 const Alerts = () => {
-    const [severityFilter, setSeverityFilter] = useState('All');
   const ListSeverity = ["All", "Critical", "High", "Medium", "Low"];
+  const [severityFilter, setSeverityFilter] = useState("All");
 
-    const handleItemSelected = (index) => {
-        setSeverityFilter(ListSeverity[index]);
-    } 
+  const handleItemSelected = (index) => {
+    setSeverityFilter(ListSeverity[index]);
+  };
 
-    const filteredItems = data.filter((item) => item.severity === severityFilter || severityFilter === 'All');
+  const filteredItems = data.filter((item) => item.severity === severityFilter || severityFilter === 'All');
 
     return (
         <>
