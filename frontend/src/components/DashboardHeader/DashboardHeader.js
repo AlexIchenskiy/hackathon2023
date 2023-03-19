@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import ikona3 from "../../assets/images/icons_logout.png";
 import ikona1 from "../../assets/images/icons_user_info.png";
@@ -19,10 +20,12 @@ const DashboardHeader = () => {
 
       return (
         <header className='bg-light-violet flex items-center justify-between px-4 py-3 '>
+        <Link to='/'>
           <div className="flex items-center">
             <img src={logo} alt="ikona logo" className="h-12 w-12 mr-2" />
             <span className="text-5xl font-bold font-family: ui-monospace">SCS</span>
           </div>
+        </Link>
           <span className={`border-red border-2 px-3 py-3 rounded-3xl text-lg font-medium cursor-pointer transition-all duration-300 ${showWindow ? 'bg-red text-white' : ''}`}
             onClick = {handleWindowToggle}
           >
