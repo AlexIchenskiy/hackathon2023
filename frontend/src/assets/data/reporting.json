@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "type": "Phishing",
+    "severity": "High",
+    "source": "Unknown",
+    "potential_impact": "Data breach and financial loss",
+    "timestamp": "2023-03-19T10:30:00Z",
+    "location": "New York"
+  },
+  {
+    "id": 2,
+    "type": "Malware",
+    "severity": "Medium",
+    "source": "External source",
+    "potential_impact": "Data loss and system downtime",
+    "timestamp": "2023-03-18T15:45:00Z",
+    "location": "San Francisco"
+  },
+  {
+    "id": 3,
+    "type": "Ransomware",
+    "severity": "Critical",
+    "source": "Malicious email attachment",
+    "potential_impact": "System shutdown and data encryption",
+    "timestamp": "2023-03-17T08:20:00Z",
+    "location": "London"
+  },
+  {
+    "id": 4,
+    "type": "SQL Injection",
+    "severity": "High",
+    "source": "External attacker",
+    "potential_impact": "Data theft and system hijacking",
+    "timestamp": "2023-03-16T14:55:00Z",
+    "location": "Tokyo"
+  },
+  {
+    "id": 5,
+    "type": "Cross-Site Scripting (XSS)",
+    "severity": "Medium",
+    "source": "Internal code vulnerability",
+    "potential_impact": "Data theft and website defacement",
+    "timestamp": "2023-03-15T11:10:00Z",
+    "location": "Berlin"
+  },
+  {
+    "id": 6,
+    "type": "Denial of Service (DoS)",
+    "severity": "Critical",
+    "source": "External attacker",
+    "potential_impact": "System crash and service disruption",
+    "timestamp": "2023-03-14T09:05:00Z",
+    "location": "Sydney"
+  },
+  {
+    "id": 7,
+    "type": "Brute Force Attack",
+    "severity": "High",
+    "source": "External attacker",
+    "potential_impact": "Data theft and system hijacking",
+    "timestamp": "2023-03-13T16:30:00Z",
+    "location": "Toronto"
+  },
+  {
+    "id": 8,
+    "type": "Man-in-the-Middle (MitM)",
+    "severity": "High",
+    "source": "External attacker",
+    "potential_impact": "Data theft and unauthorized access",
+    "timestamp": "2023-03-12T13:45:00Z",
+    "location": "Paris"
+  },
+  {
+    "id": 9,
+    "type": "Social Engineering",
+    "severity": "Medium",
+    "source": "Internal and external actors",
+    "potential_impact": "Data theft and unauthorized access",
+    "timestamp": "2023-03-11T10:20:00Z",
+    "location": "Singapore"
+  },
+  {
+    "id": 10,
+    "type": "Insider Threat",
+    "severity": "Critical",
+    "source": "Internal employee",
+    "potential_impact": "Data theft and sabotage",
+    "timestamp": "2023-0310T08:15:00Z",
+    "location": "Washington D.C."
+  },
+  {
+    "id": 11,
+    "type": "Advanced Persistent Threat (APT)",
+    "severity": "Critical",
+    "source": "State-sponsored actor",
+    "potential_impact": "Data theft and system hijacking",
+    "timestamp": "2023-03-09T15:40:00Z",
+    "location": "Moscow"
+  },
+  {
+    "id": 12,
+    "type": "Phishing",
+    "severity": "High",
+    "source": "Unknown",
+    "potential_impact": "Data breach and financial loss",
+    "timestamp": "2023-03-08T12:30:00Z",
+    "location": "New York"
+  },
+  {
+    "id": 13,
+    "type": "Malware",
+    "severity": "Medium",
+    "source": "External source",
+    "potential_impact": "Data loss and system downtime",
+    "timestamp": "2023-03-07T09:45:00Z",
+    "location": "San Francisco"
+  },
+  {
+    "id": 14,
+    "type": "Ransomware",
+    "severity": "Critical",
+    "source": "Malicious email attachment",
+    "potential_impact": "System shutdown and data encryption",
+    "timestamp": "2023-03-06T11:20:00Z",
+    "location": "London"
+  },
+  {
+    "id": 15,
+    "type": "SQL Injection",
+    "severity": "High",
+    "source": "External attacker",
+    "potential_impact": "Data theft and system hijacking",
+    "timestamp": "2023-03-05T16:55:00Z",
+    "location": "Tokyo"
+  },
+  {
+    "id": 16,
+    "type": "Cross-Site Scripting (XSS)",
+    "severity": "Medium",
+    "source": "Internal code vulnerability",
+    "potential_impact": "Data theft and website defacement",
+    "timestamp": "2023-03-04T13:10:00Z",
+    "location": "Berlin"
+  },
+  {
+    "id": 17,
+    "type": "Denial of Service (DoS)",
+    "severity": "Critical",
+    "source": "External attacker",
+    "potential_impact": "System crash and service disruption",
+    "timestamp": "2023-03-03T09:05:00Z",
+    "location": "Sydney"
+  },
+  {
+    "id": 18,
+    "type": "Brute Force Attack",
+    "severity": "High",
+    "source": "External attacker",
+    "potential_impact": "Data theft and system hijacking",
+    "timestamp": "2023-03-02T16:30:00Z",
+    "location": "Toronto"
+  },
+  {
+    "id": 19,
+    "type": "Man-in-the-Middle (MitM)",
+    "severity": "High",
+    "source": "External attacker",
+    "potential_impact": "Data theft and unauthorized access",
+    "timestamp": "2023-03-01T13:45:00Z",
+    "location": "Paris"
+  }
+]

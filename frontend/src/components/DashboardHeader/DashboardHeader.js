@@ -8,10 +8,9 @@ import logo from "../../assets/images/ikona_spider.png";
 
 const DashboardHeader = () => {
   const [showWindow, setShowWindow] = useState(false);
-
-  function handleWindowToggle() {
+  const handleWindowToggle = () => {
     setShowWindow(!showWindow);
-  }
+  };
 
   return (
     <header className="bg-light-violet flex items-center justify-between px-4 py-3 ">

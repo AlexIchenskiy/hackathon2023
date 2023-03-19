@@ -190,7 +190,7 @@
   "action_required": "Block the source of the SQL injection attempt and investigate the logs for any additional attempts. Implement additional security measures to prevent future SQL injection attacks."
   },
   {
-  "id": "01234",
+  "id": "99999",
   "name": "Outdated SSL Protocol Detected",
   "severity": "Medium",
   "domain": "example.com",
@@ -200,7 +200,7 @@
   "action_required": "Update the website's SSL configuration to use only the latest, most secure protocols."
   },
   {
-  "id": "12340",
+  "id": "99998",
   "name": "Unauthorized Physical Access Attempt",
   "severity": "Critical",
   "domain": "example.com",
@@ -210,7 +210,7 @@
   "action_required": "Immediately investigate the physical security logs and take appropriate action to prevent unauthorized access. Implement additional physical security measures to prevent future unauthorized access attempts."
   },
   {
-  "id": "23450",
+  "id": "99997",
   "name": "Denial of Service Attack",
   "severity": "Critical",
   "domain": "example.com",
@@ -220,7 +220,7 @@
   "action_required": "Block the source of the attack and implement additional measures to prevent future denial of service attacks, such as rate limiting and load balancing."
   },
   {
-  "id": "34560",
+  "id": "99996",
   "name": "Unauthorized System Access Attempt",
   "severity": "High",
   "domain": "example.com",
@@ -230,7 +230,7 @@
   "action_required": "Block thesource of the unauthorized access attempt and investigate the logs for any additional attempts. Implement additional security measures to prevent future unauthorized access attempts."
   },
   {
-  "id": "45670",
+  "id": "99995",
   "name": "Phishing Email Detected",
   "severity": "Medium",
   "domain": "example.com",
@@ -240,7 +240,7 @@
   "action_required": "Educate users on how to recognize and avoid phishing emails. Quarantine any affected emails and investigate any potential security breaches."
   },
   {
-  "id": "56780",
+  "id": "99994",
   "name": "Account Brute-Force Attack",
   "severity": "High",
   "domain": "example.com",
@@ -250,7 +250,7 @@
   "action_required": "Block the source of the brute-force attack and investigate the logs for any additional attempts. Implement additional security measures such as multi-factor authentication to prevent future attacks."
   },
   {
-  "id": "67890",
+  "id": "99993",
   "name": "Cross-Site Scripting (XSS) Attempt",
   "severity": "Medium",
   "domain": "example.com",
@@ -260,7 +260,7 @@
   "action_required": "Block the source of the XSS attempt and investigate the logs for any additional attempts. Implement additional security measures such as input validation and output encoding to prevent future XSS attacks."
   },
   {
-  "id": "78901",
+  "id": "99992",
   "name": "Remote Code Execution Attempt",
   "severity": "High",
   "domain": "example.com",
@@ -270,7 +270,7 @@
   "action_required": "Block the source of the remote code execution attempt and investigate the logs for any additional attempts. Implement additional security measures such as network segmentation to prevent future attacks."
   },
   {
-  "id": "89012",
+  "id": "99991",
   "name": "Weak Password Detected",
   "severity": "Low",
   "domain": "example.com",
@@ -280,7 +280,7 @@
   "action_required": "Require users to choose stronger passwords and implement additional security measures such as account lockouts to prevent brute-force attacks."
   },
   {
-  "id": "90123",
+  "id": "99990",
   "name": "Malicious File Detected",
   "severity": "High",
   "domain": "example.com",

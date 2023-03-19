@@ -7,7 +7,9 @@ import data from '../../assets/data/realtime.json';
 const RealTimeMonitoring = () => {   
     const [chartData, setChartData] = useState(data);
 
-    useEffect(() => setChartData(data), []);
+    useEffect(() => {
+        setChartData(data);
+    }, []);
 
     useEffect(() => {
       const timer = setInterval(() => {
