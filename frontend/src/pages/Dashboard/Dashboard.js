@@ -36,9 +36,9 @@ const Dashboard = () => {
                 <div className='fixed left-0 w-1/4'>
                     <DashboardNav onItemSelected={handleItemSelected} />
                 </div>
-                
-                <div className='overflow-y-scroll col-start-2 col-end-5'>
-                    <div className='inline-block'>
+
+                <div className='col-start-2 col-end-5'>
+                    <div className='grid grid-cols-3 gap-10'>
                         {selectedItem}
                     </div>
                 </div>
