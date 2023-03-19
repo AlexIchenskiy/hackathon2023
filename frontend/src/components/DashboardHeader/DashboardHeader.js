@@ -1,15 +1,18 @@
 import React from "react";
+
 import ikona3 from "../../assets/images/icons_logout.png";
 import ikona1 from "../../assets/images/icons_user_info.png";
 import ikona2 from "../../assets/images/icons_user_set.png";
 
 import { useState } from "react";
 
-import "./DashboardHeader.scss";
+import FilterBySeverity from "../ThreatIntelligence/components/FilterBySeverity/FilterBySeverity";
 
+import "./DashboardHeader.scss";
 import logo from "../../assets/images/ikona_spider.png";
 
 const DashboardHeader = () => {
+
     const [showWindow,setShowWindow] = useState(false);
 
     const handleWindowToggle = () => {
@@ -41,3 +44,4 @@ const DashboardHeader = () => {
     )}
 
 export default DashboardHeader
+
