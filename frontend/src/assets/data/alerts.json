@@ -1,0 +1,292 @@
+[
+  {
+    "id": "12345",
+    "name": "Unauthorized Access Attempt",
+    "severity": "High",
+    "domain": "example.com",
+    "service": "Login",
+    "cluster": "web-server-1",
+    "timestamp": "2023-03-18T09:35:21Z",
+    "action_required": "Investigate the source of the unauthorized access attempt and block if necessary."
+  },
+  {
+    "id": "23456",
+    "name": "SQL Injection Attack Detected",
+    "severity": "Critical",
+    "domain": "example.com",
+    "service": "Database",
+    "cluster": "database-1",
+    "timestamp": "2023-03-18T10:45:12Z",
+    "action_required": "Block the source of the SQL injection attack and patch any vulnerabilities in the database system."
+  },
+  {
+    "id": "34567",
+    "name": "Malware Detected",
+    "severity": "Medium",
+    "domain": "example.com",
+    "service": "Email",
+    "cluster": "email-server-1",
+    "timestamp": "2023-03-18T11:23:45Z",
+    "action_required": "Isolate the infected machine, remove the malware and scan all other machines for any signs of infection."
+  },
+  {
+    "id": "45678",
+    "name": "Data Breach",
+    "severity": "Critical",
+    "domain": "example.com",
+    "service": "Customer Data",
+    "cluster": "database-1",
+    "timestamp": "2023-03-18T12:01:23Z",
+    "action_required": "Immediately block the source of the breach, investigate the scope of the breach and notify affected customers."
+  },
+  {
+    "id": "56789",
+    "name": "DDoS Attack Detected",
+    "severity": "High",
+    "domain": "example.com",
+    "service": "Website",
+    "cluster": "web-server-1",
+    "timestamp": "2023-03-18T12:59:34Z",
+    "action_required": "Block the source of the attack and implement measures to mitigate future DDoS attacks."
+  },
+  {
+    "id": "67890",
+    "name": "Brute Force Attack Detected",
+    "severity": "Medium",
+    "domain": "example.com",
+    "service": "SSH",
+    "cluster": "web-server-2",
+    "timestamp": "2023-03-18T13:46:57Z",
+    "action_required": "Block the source of the attack and implement measures to prevent future brute force attacks."
+  },
+  {
+    "id": "78901",
+    "name": "Cross-Site Scripting (XSS) Attack Detected",
+    "severity": "High",
+    "domain": "example.com",
+    "service": "Website",
+    "cluster": "web-server-1",
+    "timestamp": "2023-03-18T14:32:45Z",
+    "action_required": "Block the source of the attack and patch any vulnerabilities in the website code."
+  },
+  {
+    "id": "89012",
+    "name": "Phishing Attack Detected",
+    "severity": "Medium",
+    "domain": "example.com",
+    "service": "Email",
+    "cluster": "email-server-1",
+    "timestamp": "2023-03-18T15:12:34Z",
+    "action_required": "Notify affected users and educate them about how to avoid falling for phishing attacks. Block any known malicious links and implement anti-phishing measures in the email system."
+  },
+  {
+  "id": "90123",
+  "name": "Security Certificate Expired",
+  "severity": "Low",
+  "domain": "example.com",
+  "service": "Website",
+  "cluster": "web-server-2",
+  "timestamp": "2023-03-18T16:01:23Z",
+  "action_required": "Renew the security certificate and update the website's SSL configuration."
+  },
+  {
+  "id": "01234",
+  "name": "Insecure Password Detected",
+  "severity": "Medium",
+  "domain": "example.com",
+  "service": "FTP",
+  "cluster": "web-server-1",
+  "timestamp": "2023-03-18T16:45:32Z",
+  "action_required": "Require users to change their passwords to stronger, more secure ones. Implement multi-factor authentication if possible."
+  },
+  {
+  "id": "12340",
+  "name": "Access Control Breach",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "CRM",
+  "cluster": "database-2",
+  "timestamp": "2023-03-18T17:30:45Z",
+  "action_required": "Investigate the scope of the breach and immediately revoke any unauthorized access. Implement stricter access controls and monitor access logs."
+  },
+  {
+  "id": "23450",
+  "name": "Network Intrusion Detected",
+  "severity": "Critical",
+  "domain": "example.com",
+  "service": "Firewall",
+  "cluster": "security-1",
+  "timestamp": "2023-03-18T18:15:56Z",
+  "action_required": "Block the source of the intrusion and thoroughly investigate the security logs. Implement additional security measures to prevent future intrusions."
+  },
+  {
+  "id": "34560",
+  "name": "Suspicious Activity Detected",
+  "severity": "Medium",
+  "domain": "example.com",
+  "service": "VPN",
+  "cluster": "security-2",
+  "timestamp": "2023-03-18T19:00:23Z",
+  "action_required": "Thoroughly investigate the activity logs and identify any potential threats. Implement additional monitoring and alerting measures to prevent future suspicious activity."
+  },
+  {
+  "id": "45670",
+  "name": "Weak SSL Configuration Detected",
+  "severity": "Low",
+  "domain": "example.com",
+  "service": "Website",
+  "cluster": "web-server-1",
+  "timestamp": "2023-03-18T19:45:01Z",
+  "action_required": "Update the website's SSL configuration to use stronger, more secure ciphers and protocols."
+  },
+  {
+  "id": "56780",
+  "name": "Outdated Software Detected",
+  "severity": "Medium",
+  "domain": "example.com",
+  "service": "Database",
+  "cluster": "database-1",
+  "timestamp": "2023-03-18T20:30:12Z",
+  "action_required": "Patch any known vulnerabilities in the software and update to the latest version."
+  },
+  {
+  "id": "67890",
+  "name": "Unauthorized API Access Attempt",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "API",
+  "cluster": "api-server-1",
+  "timestamp": "2023-03-18T21:15:23Z",
+  "action_required": "Block the source of the unauthorized access attempt and investigate the logs for any additional attempts. Implement additional security measures to prevent future unauthorized access attempts."
+  },
+  {
+  "id": "78901",
+  "name": "Malware Infection Detected",
+  "severity": "Critical",
+  "domain": "example.com",
+  "service": "Workstation",
+  "cluster": "workstation-2",
+  "timestamp": "2023-03-18T22:00:34Z",
+  "action_required": "Immediately isolate the infected workstation from the network and thoroughly scan and remove any malware. Educate users on how to avoid downloading and running malware."
+  },
+  {
+  "id": "89012",
+  "name": "Data Leak Detected",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "Storage",
+  "cluster": "storage-1",
+  "timestamp": "2023-03-18T22:45:45Z",
+  "action_required": "Identify the cause and scope of the data leak and immediately revoke any unauthorized access. Implement additional security measures to prevent future data leaks."
+  },
+  {
+  "id": "90123",
+  "name": "SQL Injection Attempt",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "Website",
+  "cluster": "web-server-2",
+  "timestamp": "2023-03-18T23:30:56Z",
+  "action_required": "Block the source of the SQL injection attempt and investigate the logs for any additional attempts. Implement additional security measures to prevent future SQL injection attacks."
+  },
+  {
+  "id": "01234",
+  "name": "Outdated SSL Protocol Detected",
+  "severity": "Medium",
+  "domain": "example.com",
+  "service": "Website",
+  "cluster": "web-server-1",
+  "timestamp": "2023-03-19T00:16:07Z",
+  "action_required": "Update the website's SSL configuration to use only the latest, most secure protocols."
+  },
+  {
+  "id": "12340",
+  "name": "Unauthorized Physical Access Attempt",
+  "severity": "Critical",
+  "domain": "example.com",
+  "service": "Data Center",
+  "cluster": "security-1",
+  "timestamp": "2023-03-19T01:01:18Z",
+  "action_required": "Immediately investigate the physical security logs and take appropriate action to prevent unauthorized access. Implement additional physical security measures to prevent future unauthorized access attempts."
+  },
+  {
+  "id": "23450",
+  "name": "Denial of Service Attack",
+  "severity": "Critical",
+  "domain": "example.com",
+  "service": "Website",
+  "cluster": "web-server-2",
+  "timestamp": "2023-03-19T01:46:29Z",
+  "action_required": "Block the source of the attack and implement additional measures to prevent future denial of service attacks, such as rate limiting and load balancing."
+  },
+  {
+  "id": "34560",
+  "name": "Unauthorized System Access Attempt",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "Server",
+  "cluster": "server-1",
+  "timestamp": "2023-03-19T02:31:40Z",
+  "action_required": "Block thesource of the unauthorized access attempt and investigate the logs for any additional attempts. Implement additional security measures to prevent future unauthorized access attempts."
+  },
+  {
+  "id": "45670",
+  "name": "Phishing Email Detected",
+  "severity": "Medium",
+  "domain": "example.com",
+  "service": "Email",
+  "cluster": "email-1",
+  "timestamp": "2023-03-19T03:16:51Z",
+  "action_required": "Educate users on how to recognize and avoid phishing emails. Quarantine any affected emails and investigate any potential security breaches."
+  },
+  {
+  "id": "56780",
+  "name": "Account Brute-Force Attack",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "Authentication",
+  "cluster": "auth-server-1",
+  "timestamp": "2023-03-19T04:02:02Z",
+  "action_required": "Block the source of the brute-force attack and investigate the logs for any additional attempts. Implement additional security measures such as multi-factor authentication to prevent future attacks."
+  },
+  {
+  "id": "67890",
+  "name": "Cross-Site Scripting (XSS) Attempt",
+  "severity": "Medium",
+  "domain": "example.com",
+  "service": "Website",
+  "cluster": "web-server-2",
+  "timestamp": "2023-03-19T04:47:13Z",
+  "action_required": "Block the source of the XSS attempt and investigate the logs for any additional attempts. Implement additional security measures such as input validation and output encoding to prevent future XSS attacks."
+  },
+  {
+  "id": "78901",
+  "name": "Remote Code Execution Attempt",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "Server",
+  "cluster": "server-2",
+  "timestamp": "2023-03-19T05:32:24Z",
+  "action_required": "Block the source of the remote code execution attempt and investigate the logs for any additional attempts. Implement additional security measures such as network segmentation to prevent future attacks."
+  },
+  {
+  "id": "89012",
+  "name": "Weak Password Detected",
+  "severity": "Low",
+  "domain": "example.com",
+  "service": "Authentication",
+  "cluster": "auth-server-2",
+  "timestamp": "2023-03-19T06:17:35Z",
+  "action_required": "Require users to choose stronger passwords and implement additional security measures such as account lockouts to prevent brute-force attacks."
+  },
+  {
+  "id": "90123",
+  "name": "Malicious File Detected",
+  "severity": "High",
+  "domain": "example.com",
+  "service": "File Storage",
+  "cluster": "file-server-1",
+  "timestamp": "2023-03-19T07:02:46Z",
+  "action_required": "Isolate the infected file and thoroughly scan and remove any malware. Implement additional security measures such as file type restrictions and sandboxing to prevent future infections."
+  }
+]
