@@ -1,22 +1,20 @@
-import React from 'react';
+import React from "react";
 
 import { useState } from "react";
 
-import './DashboardHeader.scss';
+import "./DashboardHeader.scss";
 
 import logo from "../../assets/images/ikona_spider.png";
 
 const DashboardHeader = () => {
-
     const [showWindow,setShowWindow] = useState(false);
 
     const handleWindowToggle = () => {
         setShowWindow(!showWindow);
     };
 
-
-    return (
-        <header className=' flex items-center justify-between px-4 py-3 '>
+      return (
+        <header className='bg-light-violet flex items-center justify-between px-4 py-3 '>
           <div className="flex items-center">
             <img src={logo} alt="ikona logo" className="h-12 w-12 mr-2" />
             <span className="text-5xl font-bold font-family: ui-monospace">SCS</span>
