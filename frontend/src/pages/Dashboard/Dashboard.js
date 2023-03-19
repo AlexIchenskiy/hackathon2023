@@ -33,6 +33,7 @@ const Dashboard = () => {
                 <DashboardNav onItemSelected={handleItemSelected} />
                 <div className='inline-block w-full h-full'>
                     {selectedItem}
+
                 </div>
             </div>
             <DashboardFooter />
