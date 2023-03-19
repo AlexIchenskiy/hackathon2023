@@ -32,9 +32,13 @@ const Dashboard = () => {
             <DashboardHeader />
             <div className='w-full h-full flex flex-row justify-start items-start overflow-y-scroll mt-0 pb-10'
                 style={{height: '90%'}}>
-                <div className='grid grid-cols-4 gap-0 h-screen'>
-                <div className='fixed left-0 w-1/4'>
-                    <DashboardNav onItemSelected={handleItemSelected} />
+                <DashboardNav onItemSelected={handleItemSelected} />
+                <div className='inline-block w-full h-full'>
+                    {selectedItem}
+                    <div className='grid grid-cols-4 gap-0 h-screen'>
+                    <div className='fixed left-0 w-1/4'>
+                        <DashboardNav onItemSelected={handleItemSelected} />
+                    </div>
                 </div>
                 
                 <div className='overflow-y-scroll col-start-2 col-end-5'>

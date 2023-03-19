@@ -5,7 +5,6 @@ import Home from './pages/Home/Home.js';
 import Login from './pages/LogIn/Login.js';
 import Signup from './pages/SignUp/Signup.js';
 import Dashboard from "./pages/Dashboard/Dashboard";
-import ThreatIntelligence from './components/ThreatIntelligence/ThreatIntelligence.js';
 
 function App() {
   return(
@@ -14,7 +13,6 @@ function App() {
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
-      <Route path='/threat' element={<ThreatIntelligence />} />
     </Routes>
   )
 }
